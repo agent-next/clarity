@@ -62,7 +62,7 @@ Verify the documented install flow works from a fresh shell:
 bash -lc '
 set -euo pipefail
 dir="$HOME/.claude/clarity"
-repo="https://github.com/robotlearning123/clarity.git"
+repo="https://github.com/agent-next/clarity.git"
 ref="vX.Y.Z"
 
 if [ -d "$dir/.git" ]; then
