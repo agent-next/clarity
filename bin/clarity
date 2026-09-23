@@ -42,7 +42,7 @@ MORE
   CLI:     clarity <cmd>
   Plugin:  add via 'claude plugin marketplace add <clarity-path>' then '/clarity-doctor'
   MCP:     see docs/mcp.md for server registration
-  Docs:    https://github.com/robotlearning123/clarity
+  Docs:    https://github.com/agent-next/clarity
 EOF
 }
 

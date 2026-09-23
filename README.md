@@ -39,7 +39,7 @@ Clarity ships in four interchangeable forms. Install one or all — they share t
 bash -lc '
 set -euo pipefail
 dir="$HOME/.claude/clarity"
-repo="https://github.com/robotlearning123/clarity.git"
+repo="https://github.com/agent-next/clarity.git"
 ref="v0.0.6"
 
 if [ -d "$dir/.git" ]; then
@@ -59,7 +59,7 @@ This installs Clarity into `~/.claude/clarity`, validates the plugin, registers 
 
 Manual fallback:
 ```bash
-git -c advice.detachedHead=false clone --depth 1 --branch v0.0.6 https://github.com/robotlearning123/clarity.git ~/.claude/clarity
+git -c advice.detachedHead=false clone --depth 1 --branch v0.0.6 https://github.com/agent-next/clarity.git ~/.claude/clarity
 CLARITY_REPO_REF=v0.0.6 ~/.claude/clarity/install.sh
 ```
 

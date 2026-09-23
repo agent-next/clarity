@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-REPO_URL="${CLARITY_REPO_URL:-https://github.com/robotlearning123/clarity.git}"
+REPO_URL="${CLARITY_REPO_URL:-https://github.com/agent-next/clarity.git}"
 REPO_REF="${CLARITY_REPO_REF:-}"
 INSTALL_DIR="${CLARITY_INSTALL_DIR:-$HOME/.claude/clarity}"
 CLAUDE_BIN="${CLARITY_CLAUDE_BIN:-claude}"

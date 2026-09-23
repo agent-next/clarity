@@ -56,7 +56,7 @@ PY
 
 "$ROOT/bin/clarity" doctor --since-days 30 --out "$TMP/report.md" >/dev/null
 grep -Fq 'Estimated cost: **$119.00**' "$TMP/report.md"
-if rg -n -S 'robotlearning123/1key|case-study-1key|\b1Key\b' "$TMP/report.md" >/dev/null; then
+if rg -n -S '(robotlearning123|agent-next)/1key|case-study-1key|\b1Key\b' "$TMP/report.md" >/dev/null; then
   echo "doctor report leaked stale 1Key-specific guidance" >&2
   exit 1
 fi
@@ -174,7 +174,7 @@ export FAKE_CLAUDE_STATE="$DOC_STATE"
 PATH="$FAKE_BIN:$PATH" HOME="$DOC_HOME" CLARITY_REPO_URL="file://$DOC_REPO" CLARITY_REPO_REF="v$VERSION" bash -lc '
 set -euo pipefail
 dir="${CLARITY_INSTALL_DIR:-$HOME/.claude/clarity}"
-repo="${CLARITY_REPO_URL:-https://github.com/robotlearning123/clarity.git}"
+repo="${CLARITY_REPO_URL:-https://github.com/agent-next/clarity.git}"
 ref="${CLARITY_REPO_REF:-main}"
 
 if [ -d "$dir/.git" ]; then

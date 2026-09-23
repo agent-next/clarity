@@ -4,7 +4,7 @@
     "description": "Copilot-style Claude Code context and token management. Doctor scans past usage, statusline shows cache TTL and traffic-light suggestion, all from official Anthropic docs."
   },
   "owner": {
-    "name": "robotlearning123"
+    "name": "agent-next"
   },
   "plugins": [
     {
