@@ -56,7 +56,7 @@ PY
 
 "$ROOT/bin/clarity" doctor --since-days 30 --out "$TMP/report.md" >/dev/null
 grep -Fq 'Estimated cost: **$119.00**' "$TMP/report.md"
-if rg -n -S 'robotlearning123/1key|case-study-1key|\b1Key\b' "$TMP/report.md" >/dev/null; then
+if rg -n -S '(robotlearning123|agent-next)/1key|case-study-1key|\b1Key\b' "$TMP/report.md" >/dev/null; then
   echo "doctor report leaked stale 1Key-specific guidance" >&2
   exit 1
 fi

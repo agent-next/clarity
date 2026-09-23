@@ -45,7 +45,7 @@ assert 'CLARITY_REPO_REF="$ref" "$dir/install.sh"' in readme, "README installer 
 assert f"/clarity/{plugin_version}/" in readme, "README plugin cache path is not pinned to the current version"
 PY
 
-if rg -n -S 'robotlearning123/1key|case-study-1key|\\b1Key\\b' README.md CHANGELOG.md docs scripts/analyze.py >/dev/null; then
+if rg -n -S '(robotlearning123|agent-next)/1key|case-study-1key|\\b1Key\\b' README.md CHANGELOG.md docs scripts/analyze.py >/dev/null; then
   echo "release-check: found stale external-project references" >&2
   exit 1
 fi
