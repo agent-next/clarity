@@ -1,0 +1,5 @@
+{
+  "name": "clarity",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "make setup"
+}
